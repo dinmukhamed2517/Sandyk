@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/listFragment">
+
+    <fragment
+        android:id="@+id/listFragment"
+        android:name="kz.sdk.sandykprot.screens.ListFragment"
+        android:label="ListFragment" >
+        <action
+            android:id="@+id/action_listFragment_to_divideFragment"
+            app:destination="@id/divideFragment" />
+        <action
+            android:id="@+id/action_listFragment_to_chooseFragment"
+            app:destination="@id/chooseFragment" />
+        <action
+            android:id="@+id/action_listFragment_to_addFragment"
+            app:destination="@id/addFragment" />
+        <action
+            android:id="@+id/action_listFragment_to_deleteFragment"
+            app:destination="@id/deleteFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/divideFragment"
+        android:name="kz.sdk.sandykprot.screens.DivideFragment"
+        android:label="DivideFragment" >
+        <action
+            android:id="@+id/action_divideFragment_to_chooseFragment"
+            app:destination="@id/chooseFragment" />
+        <action
+            android:id="@+id/action_divideFragment_to_listFragment"
+            app:destination="@id/listFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chooseFragment"
+        android:name="kz.sdk.sandykprot.screens.ChooseFragment"
+        android:label="ChooseFragment" >
+        <action
+            android:id="@+id/action_chooseFragment_to_divideFragment"
+            app:destination="@id/divideFragment" />
+        <action
+            android:id="@+id/action_chooseFragment_to_listFragment"
+            app:destination="@id/listFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addFragment"
+        android:name="kz.sdk.sandykprot.screens.AddFragment"
+        android:label="AddFragment" >
+        <argument
+            android:name="className"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/deleteFragment"
+        android:name="kz.sdk.sandykprot.screens.DeleteFragment"
+        android:label="DeleteFragment" >
+        <argument
+            android:name="className"
+            app:argType="string" />
+    </fragment>
+</navigation>
