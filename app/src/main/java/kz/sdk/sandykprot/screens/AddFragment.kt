@@ -36,6 +36,7 @@ class AddFragment:BaseFragment<FragmentAddBinding>(FragmentAddBinding::inflate) 
             if (newStudentName.isNotEmpty()) {
                 studentViewModel.addStudents(className, listOf(newStudentName))
                 binding.etStudentName.text?.clear()
+                showCustomDialog("Успешно", "Ученик добавлен")
             }
             else{
                 showCustomCancelDialog("Ошибка", "В заполненном источнике информации обнаружена ошибка. Пожалуйста, заполните заново.")

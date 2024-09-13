@@ -3,9 +3,17 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="main">#A47CF3</color>
+<!--    <color name="main">#76AC30</color>-->
+
     <color name="stroke_color">#C1BBEB</color>
     <color name="red">#E1000E</color>
-    <color name="green_text">#76AC30</color>
+    <color name="green_text">#90FF00</color>
+    <color name="secondary_bg">#E5E6FB</color>
+
+    <color name="choice_bg">#F28F8F</color>
+    <color name="background_card">#FFC0CB</color>
+
     <color name="dark_grey">#4F4F4F</color>
+    <color name="grey">#263238</color>
 
 </resources>

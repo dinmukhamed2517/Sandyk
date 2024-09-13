@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
     app:startDestination="@id/listFragment">
 
@@ -42,6 +43,12 @@
         <action
             android:id="@+id/action_chooseFragment_to_listFragment"
             app:destination="@id/listFragment" />
+        <action
+            android:id="@+id/action_chooseFragment_to_spinFragment"
+            app:destination="@id/spinFragment" />
+        <action
+            android:id="@+id/action_chooseFragment_to_airportFragment"
+            app:destination="@id/airportFragment" />
     </fragment>
     <fragment
         android:id="@+id/addFragment"
@@ -58,5 +65,33 @@
         <argument
             android:name="className"
             app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/spinFragment"
+        android:name="kz.sdk.sandykprot.screens.SpinFragment"
+        android:label="SpinFragment" >
+        <action
+            android:id="@+id/action_spinFragment_to_chooseFragment"
+            app:destination="@id/chooseFragment" />
+        <action
+            android:id="@+id/action_spinFragment_to_airportFragment"
+            app:destination="@id/airportFragment" />
+        <action
+            android:id="@+id/action_spinFragment_to_divideFragment"
+            app:destination="@id/divideFragment" />
+        <action
+            android:id="@+id/action_spinFragment_to_listFragment"
+            app:destination="@id/listFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/airportFragment"
+        android:name="kz.sdk.sandykprot.screens.AirportFragment"
+        android:label="AirportFragment" >
+        <action
+            android:id="@+id/action_airportFragment_to_chooseFragment"
+            app:destination="@id/chooseFragment" />
+        <action
+            android:id="@+id/action_airportFragment_to_spinFragment"
+            app:destination="@id/spinFragment" />
     </fragment>
 </navigation>

@@ -56,5 +56,8 @@ class StudentViewModel(application: Application) : AndroidViewModel(application)
             studentDao.deleteStudent(student)
         }
     }
+    fun getAllClassNames():LiveData<List<String>>{
+        return studentDao.getAllClassNames()
+    }
 }
 
